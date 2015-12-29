@@ -1,15 +1,10 @@
-update=Ср. 23 дек. 2015 14:51:19
-last_client=eeschema
+update=Вт. 29 дек. 2015 14:23:35
+last_client=kicad
 [general]
 version=1
 [eeschema]
 version=1
 LibDir=
-NetFmtName=
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
 [eeschema/libraries]
 LibName1=power
 LibName2=device

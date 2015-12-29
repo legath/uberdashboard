@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -29,9 +28,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-EELAYER 27 0
+LIBS:stm32
+LIBS:uberdashboard
+LIBS:uberdashboard-cache
+EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -43,4 +45,221 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L STM32F429II U1
+U 1 1 567AECCD
+P 6550 4950
+F 0 "U1" H 6600 5500 60  0000 C CNN
+F 1 "STM32F429II" H 6600 5850 60  0000 C CNN
+F 2 "~" H 8650 4200 60  0000 C CNN
+F 3 "~" H 8650 4200 60  0000 C CNN
+	1    6550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L EM63A165TS U2
+U 1 1 5682787E
+P 14350 3300
+F 0 "U2" H 14350 2550 60  0000 C CNN
+F 1 "EM63A165TS" H 14350 3725 60  0000 C CNN
+F 2 "" H 14350 3300 60  0000 C CNN
+F 3 "" H 14350 3300 60  0000 C CNN
+	1    14350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX25L3206E U3
+U 1 1 56827B7C
+P 6300 10600
+F 0 "U3" H 6300 10500 60  0000 C CNN
+F 1 "MX25L3206E" H 6325 10775 60  0000 C CNN
+F 2 "" H 6300 10600 60  0000 C CNN
+F 3 "" H 6300 10600 60  0000 C CNN
+	1    6300 10600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VSS #PWR?
+U 1 1 56827D96
+P 7450 10400
+F 0 "#PWR?" H 7450 10250 50  0001 C CNN
+F 1 "VSS" H 7450 10550 50  0000 C CNN
+F 2 "" H 7450 10400 50  0000 C CNN
+F 3 "" H 7450 10400 50  0000 C CNN
+	1    7450 10400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7120 10400 7450 10400
+$Comp
+L GND #PWR?
+U 1 1 56827DFB
+P 5360 10775
+F 0 "#PWR?" H 5360 10525 50  0001 C CNN
+F 1 "GND" H 5360 10625 50  0000 C CNN
+F 2 "" H 5360 10775 50  0000 C CNN
+F 3 "" H 5360 10775 50  0000 C CNN
+	1    5360 10775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 10775 5360 10775
+$Comp
+L STOD13AS U4
+U 1 1 56828202
+P 14950 9725
+F 0 "U4" H 14950 9875 60  0000 C CNN
+F 1 "STOD13AS" H 14950 10000 60  0000 C CNN
+F 2 "" H 14950 9725 60  0000 C CNN
+F 3 "" H 14950 9725 60  0000 C CNN
+	1    14950 9725
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCA82C250 U?
+U 1 1 56828C8E
+P 19410 11960
+F 0 "U?" H 19410 11835 60  0000 C CNN
+F 1 "PCA82C250" H 19410 12160 60  0000 C CNN
+F 2 "" H 19410 11960 60  0000 C CNN
+F 3 "" H 19410 11960 60  0000 C CNN
+	1    19410 11960
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	22725 13380 19165 13380
+Text Notes 19290 13510 0    60   ~ 0
+RJ45 Pin
+Text Notes 20185 13500 0    60   ~ 0
+Signal name
+Text Notes 21575 13510 0    60   ~ 0
+Signal Description
+Text Notes 19440 13690 0    60   ~ 0
+1
+Text Notes 19440 13825 0    60   ~ 0
+2
+Text Notes 19445 13950 0    60   ~ 0
+3
+Text Notes 19445 14085 0    60   ~ 0
+4
+Text Notes 19450 14215 0    60   ~ 0
+5
+Text Notes 19455 14340 0    60   ~ 0
+6
+Text Notes 19460 14475 0    60   ~ 0
+7
+Text Notes 19460 14610 0    60   ~ 0
+8
+Wire Notes Line
+	19165 13565 22725 13565
+Wire Notes Line
+	22725 13565 22725 13570
+Wire Notes Line
+	19170 13705 22720 13705
+Wire Notes Line
+	19170 13830 22720 13830
+Wire Notes Line
+	22720 13830 22720 13825
+Wire Notes Line
+	19165 13965 22725 13965
+Wire Notes Line
+	22725 13965 22725 13950
+Wire Notes Line
+	19165 14105 22725 14105
+Wire Notes Line
+	22725 14105 22725 14080
+Wire Notes Line
+	19165 14235 22730 14235
+Wire Notes Line
+	22730 14235 22730 14230
+Wire Notes Line
+	19165 14365 22725 14365
+Wire Notes Line
+	22725 14365 22725 14355
+Wire Notes Line
+	19170 14490 22725 14490
+Wire Notes Line
+	22725 14490 22725 14485
+Text Notes 20325 13680 0    60   ~ 0
+CAN_H
+Text Notes 20335 13815 0    60   ~ 0
+CAN_L
+Text Notes 20280 13945 0    60   ~ 0
+CAN_GND
+Text Notes 20275 14075 0    60   ~ 0
+Reserved
+Text Notes 20280 14215 0    60   ~ 0
+Reserved
+Text Notes 20260 14340 0    60   ~ 0
+CAN_SHLD
+Text Notes 20290 14470 0    60   ~ 0
+CAN_GND
+Text Notes 20320 14610 0    60   ~ 0
+CAN_V+
+Wire Notes Line
+	19165 14635 22725 14635
+Wire Notes Line
+	22725 13380 22725 14640
+Wire Notes Line
+	19165 13380 19165 14640
+Wire Notes Line
+	19165 14640 19170 14640
+Wire Notes Line
+	19785 13380 19785 14635
+Wire Notes Line
+	21100 13380 21100 14635
+Wire Notes Line
+	21100 14635 21095 14635
+Text Notes 21620 13675 0    60   ~ 0
+Dominant High
+Text Notes 21630 13805 0    60   ~ 0
+Dominant Low
+Text Notes 21795 13935 0    60   ~ 0
+Ground
+Text Notes 21655 14070 0    60   ~ 0
+Upgrade Path
+Text Notes 21650 14200 0    60   ~ 0
+Upgrade Path
+Text Notes 21520 14350 0    60   ~ 0
+CAN Shield, Optional
+Text Notes 21815 14465 0    60   ~ 0
+Ground
+Text Notes 21600 14600 0    60   ~ 0
+Power, Optional
+$Comp
+L RJ45 J?
+U 1 1 5682A214
+P 21710 12015
+F 0 "J?" H 21910 12515 50  0000 C CNN
+F 1 "RJ45" H 21560 12515 50  0000 C CNN
+F 2 "" H 21710 12015 50  0000 C CNN
+F 3 "" H 21710 12015 50  0000 C CNN
+	1    21710 12015
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	20060 11910 20740 11910
+Wire Wire Line
+	20740 11910 20740 11665
+Wire Wire Line
+	20740 11665 21260 11665
+Wire Wire Line
+	20060 11985 20790 11985
+Wire Wire Line
+	20790 11985 20790 11765
+Wire Wire Line
+	20790 11765 21260 11765
+$Comp
+L GND #PWR?
+U 1 1 5682ACF7
+P 22060 12690
+F 0 "#PWR?" H 22060 12440 50  0001 C CNN
+F 1 "GND" H 22060 12540 50  0000 C CNN
+F 2 "" H 22060 12690 50  0000 C CNN
+F 3 "" H 22060 12690 50  0000 C CNN
+	1    22060 12690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22060 12690 22060 12565
 $EndSCHEMATC
