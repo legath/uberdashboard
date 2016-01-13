@@ -1,4 +1,4 @@
-update=Вт. 29 дек. 2015 14:23:35
+update=Ср. 13 янв. 2016 13:14:03
 last_client=kicad
 [general]
 version=1
@@ -38,3 +38,13 @@ LibName29=contrib
 LibName30=valves
 LibName31=stm32
 LibName32=uberdashboard
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
