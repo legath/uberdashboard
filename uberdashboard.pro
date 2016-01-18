@@ -1,4 +1,4 @@
-update=Чт. 14 янв. 2016 16:58:28
+update=Пн. 18 янв. 2016 12:40:17
 last_client=kicad
 [general]
 version=1
