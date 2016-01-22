@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:uberdashboard-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -68,7 +69,7 @@ F 3 "" H 15630 5525 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L STOD13AS U6
+L STOD13AS-RESCUE-uberdashboard U6
 U 1 1 56828202
 P 4475 13710
 F 0 "U6" H 4475 13860 60  0000 C CNN
@@ -412,17 +413,6 @@ Entry Wire Line
 Text Label 9640 5450 0    60   ~ 0
 A12
 $Comp
-L R R3
-U 1 1 5696EAF6
-P 2605 5650
-F 0 "R3" V 2685 5650 50  0000 C CNN
-F 1 "0" V 2605 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2535 5650 50  0001 C CNN
-F 3 "" H 2605 5650 50  0000 C CNN
-	1    2605 5650
-	0    1    1    0   
-$EndComp
-$Comp
 L R R4
 U 1 1 5696ED43
 P 2600 5815
@@ -475,28 +465,6 @@ F 1 "GND" H 1645 5580 50  0000 C CNN
 F 2 "" H 1645 5730 50  0000 C CNN
 F 3 "" H 1645 5730 50  0000 C CNN
 	1    1645 5730
-	0    1    1    0   
-$EndComp
-$Comp
-L R R1
-U 1 1 56972370
-P 2605 3650
-F 0 "R1" V 2685 3650 50  0000 C CNN
-F 1 "0" V 2605 3650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2535 3650 50  0001 C CNN
-F 3 "" H 2605 3650 50  0000 C CNN
-	1    2605 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L R R2
-U 1 1 56972376
-P 2600 3815
-F 0 "R2" V 2680 3815 50  0000 C CNN
-F 1 "0" V 2600 3815 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 2530 3815 50  0001 C CNN
-F 3 "" H 2600 3815 50  0000 C CNN
-	1    2600 3815
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2082,7 +2050,7 @@ Wire Bus Line
 Wire Wire Line
 	9550 5450 9835 5450
 Wire Wire Line
-	2755 5650 3700 5650
+	2455 5650 3700 5650
 Wire Wire Line
 	3700 5750 2795 5750
 Wire Wire Line
@@ -2103,17 +2071,17 @@ Wire Wire Line
 	1645 5580 1645 5880
 Connection ~ 1645 5730
 Wire Wire Line
-	2755 3650 3700 3650
+	2455 3650 3700 3650
 Wire Wire Line
 	3700 3750 2795 3750
 Wire Wire Line
 	2795 3750 2800 3815
 Wire Wire Line
-	2800 3815 2750 3815
+	2800 3815 2450 3815
 Wire Wire Line
-	2450 3880 2450 3815
+	2450 3815 2450 3880
 Wire Wire Line
-	1945 3880 2450 3880
+	2450 3880 1945 3880
 Wire Wire Line
 	1945 3580 2455 3580
 Wire Wire Line
