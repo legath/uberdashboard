@@ -890,7 +890,7 @@ F 3 "" H 12085 7095 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 11730 8535 0    60   ~ 0
-MOTOR_BUS
+I2C_BUS
 Entry Wire Line
 	14745 8800 14845 8700
 Text Label 14575 8870 0    39   Italic 8
@@ -942,8 +942,6 @@ Entry Wire Line
 	13195 10380 13295 10280
 Text Label 12880 10380 0    60   ~ 0
 IRQ
-Text Label 12885 9980 0    60   ~ 0
-I2C_DATA_BUS
 $Comp
 L STM32F429ZIT6 U2
 U 1 1 56BE3AC5
@@ -1640,7 +1638,7 @@ Connection ~ 13040 10680
 Wire Bus Line
 	13295 9980 13295 10675
 Wire Bus Line
-	10210 9980 13295 9980
+	10930 9980 13295 9980
 Wire Wire Line
 	12810 10580 13195 10580
 Wire Wire Line
@@ -2196,7 +2194,7 @@ $EndComp
 Wire Wire Line
 	9935 2860 10150 2860
 Wire Bus Line
-	10930 8535 10930 3190
+	10930 3190 10930 9980
 Wire Wire Line
 	9935 3360 10830 3360
 Entry Wire Line
@@ -2509,4 +2507,10 @@ Wire Wire Line
 	9425 6025 9425 6315
 Text Label 9350 6025 0    39   ~ 0
 G3
+Entry Wire Line
+	10830 3290 10930 3190
+Wire Wire Line
+	9935 3290 10830 3290
+Text Label 10200 3290 0    39   Italic 0
+IRQ
 $EndSCHEMATC
